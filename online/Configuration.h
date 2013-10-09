@@ -29,7 +29,6 @@
 #include <JsonStream.h>
 #include <SerialStream.h>
 #include <Wifly.h>
-#include <SdFat.h>
 #include <StatusLed.h>
 //------------------------------------------------------------------------------
 /**
@@ -51,7 +50,6 @@ public:
 private:
     void enableBootloader();
     void enterProxyMode();
-    bool formatSdCard();
     bool readPusher(char* buffer, uint8_t bufferSize);
     bool readServoDefaultPosition(char* buffer, uint8_t bufferSize);
     bool readUserAndPass(char* buffer, uint8_t bufferSize);
