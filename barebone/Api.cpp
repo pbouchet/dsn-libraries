@@ -21,7 +21,7 @@
 //------------------------------------------------------------------------------
 // Buffer sizes
 /** Size of the temporary buffer used to read API path */
-uint16_t const API_PATH_BUFFER_SIZE = 384;
+uint16_t const API_PATH_BUFFER_SIZE = 160;
 /** Size of the temporary buffer used to construct POST data */
 uint16_t const API_POST_DATA_BUFFER_SIZE = 160;
 /** Size of the temporary buffer used to read API host */
