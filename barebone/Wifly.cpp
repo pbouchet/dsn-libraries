@@ -45,7 +45,7 @@ uint32_t const COMMAND_MODE_TIMEOUT = 3000;
 /** WLAN timeout (in ms) */
 uint16_t const WLAN_TIMEOUT = 10000;
 /** Special character used for text communications with the WiFly */
-uint8_t const WIFLY_REPLACE_CHAR = '$';
+uint8_t const WIFLY_REPLACE_CHAR = '\r';
 /** Baudrate for regular operating mode */
 uint32_t const FULL_SPEED = 115200;
 //------------------------------------------------------------------------------
