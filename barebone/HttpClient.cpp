@@ -26,7 +26,7 @@ const char PROGMEM HTTP_REQUEST_GET[] =
     // domain name of the website
     "Host: %s\r\n"
     // user agent used by the device
-    "User-Agent: reaDIYmate/0.3\r\n"
+    "User-Agent: dsn/1.0\r\n"
     // the connection to the host can be kept alive between successive requests
     "Connection: %S\r\n"
     // HTTP headers end with "\r\n"
@@ -38,7 +38,7 @@ const char PROGMEM HTTP_REQUEST_PARTIAL_GET[] =
     // domain name of the website
     "Host: %s\r\n"
     // user agent used by the device
-    "User-Agent: reaDIYmate/0.3\r\n"
+    "User-Agent: dsn/1.0\r\n"
     // the connection to the host can be kept alive between successive requests
     "Connection: %S\r\n"
     // specifying a range allows partial GET requests
@@ -52,7 +52,7 @@ const char PROGMEM HTTP_REQUEST_HEAD[] =
     // domain name of the website
     "Host: %s\r\n"
     // user agent used by the device
-    "User-Agent: reaDIYmate/0.3\r\n"
+    "User-Agent: dsn/1.0\r\n"
     // the connection to the host can be kept alive between successive requests
     "Connection: %S\r\n"
     // HTTP headers end with "\r\n"
@@ -346,6 +346,7 @@ int HttpClient::post(char* buffer, size_t bufferSize, const char* host,
         (F_POST | F_KEEP_ALIVE))) {
         return -1;
     }
+    Serial.println(buffer);
     // try to send the request and wait for a response from the host
     wifly_->clear();
     if (!wifly_->print(buffer))
