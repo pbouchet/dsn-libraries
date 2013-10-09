@@ -80,7 +80,7 @@ const char PROGMEM COMMAND_SERVO[] = "servo";
 /** Act as a proxy for the RN171 */
 const char PROGMEM COMMAND_PROXY[] = "proxy";
 /** Start-up signal */
-const char PROGMEM WIZARD_STARTUP[] = "reaDIYmate\n";
+const char PROGMEM WIZARD_STARTUP[] = "absolutLabs\n";
 /** Command confirmation */
 const char PROGMEM WIZARD_AOK[] = "AOK\r\n";
 /** Command error */
